@@ -1,0 +1,60 @@
+body,p,ul,li,div,span{
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+}
+a{text-decoration: none}
+#nav{
+	width:100%;
+	height:30px;
+	background:#15A230; 
+}
+#nav #nav-fixed{
+	width:1000px;
+	height:30px;
+	/*line-height: 30px*/
+	background:#15A230;
+    margin:auto;
+}
+
+#nav #nav-fixed #left-ul{
+	float: left;
+	width:450px;
+	height: inherit;
+}
+#nav #nav-fixed #left-ul ul{
+  list-style: none;
+  width: inherit;
+  height: inherit;
+}
+#nav #nav-fixed #left-ul ul li{
+	float:left;
+	width:45px;
+    height:inherit;
+    line-height: 30px;
+ }  
+#nav #nav-fixed #left-ul ul li a{
+	color:#FFFFFF;
+	font-weight: bold;
+}
+#nav #nav-fixed #left-ul ul li a:hover{color:#DDDDDD;}
+#nav #nav-fixed #right-a{
+	float: right;
+	width:260px;
+	height: inherit;
+	line-height: 30px;
+}
+#nav #nav-fixed #right-a p{
+	color:#DDDDDD;
+}
+#nav #nav-fixed #right-a a{
+	margin:0px 3px;
+	font-size:13px;
+	color:#FFFFFF;
+	font-weight: bold;
+}
+#nav #nav-fixed #right-a a:hover{
+	color:#DDDDDD;
+}
+.er{float: none background:#ccc;}
+.er a:hover{color:#00f; background: #999}

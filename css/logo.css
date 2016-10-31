@@ -1,0 +1,48 @@
+#logo{
+	height:80px;
+    width:100%;
+    background:#F5F5F5;
+}
+#logo #logo-fixed{
+	
+	width:1000px;
+	height:80px;
+	margin:0 auto;
+	
+}
+#logo #logo-fixed #logo-true{
+	
+	width:300px;
+	height:inherit;
+	float:left;
+}
+#logo #logo-fixed #search{
+    
+	width:300px;
+	height:80px;
+	line-height: 80px;
+    float: right;
+    position: relative;
+}
+#logo #logo-fixed #search .input1{
+	width:248px;
+	height:30px;
+	border:1px solid #15A230;
+	margin: 0px;
+	padding: 0px;
+}
+#logo #logo-fixed #search .input2{
+	width:50px;
+	height:32px;
+	background: #15A230;
+	color:white;
+    font-weight: bold;
+    cursor: pointer;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;left:250px ;top:24px;
+}
+#logo #logo-fixed #search .input2:hover{
+    background: #1CA462;
+}

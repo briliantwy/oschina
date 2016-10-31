@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/logo.css">
+		<link rel="stylesheet" href="css/body.css">
+	</head>
+	<body>
+<!-- 这里是js验证 -->
+        <script type="text/javascript">
+           function text(){
+           	// var email=document.getElementById("email").value;
+           	// var re=//;
+        	var userName=document.getElementById("uname").value;
+        	var re=/^.{1,10}$/;
+             if(re.test(userName)){
+             	alert("用户名正确")
+             }else{alert("长度过长，请重新输入")}
+             var passWord=document.getElementById("pword").value;
+        	var re=/.{6,}/;
+             if(re.test(passWord)){
+             	alert("密码格式正确")
+             }else{alert("长度过短，请重新输入")}
+             var trueWord=document.getElementById("tword").value;
+             if(trueWord==passWord){
+             	alert("密码确认正确")
+             }else{
+                alert("密码确认不符")
+             }
+        	}
+        </script>
+<!-- 这里是头部导航条 -->
+		<div id=nav>
+			<div id=nav-fixed>
+				<div id=left-ul>
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li style="width:70px"><a href="#">开源项目</a></li>
+						<li><a href="#">问答</a>
+						  <ul class="er-ul">
+							<li class="er"><a href="#">技术问答</a></li>
+							<li class="er"><a href="#">技术分享</a></li>
+						  </ul>
+						</li>
+						<li><a href="#">代码</a></li>
+						<li><a href="#">博客</a></li>
+						<li><a href="#">翻译</a></li>
+						<li><a href="#">咨询</a></li>
+						<li><a href="#">专题</a></li>
+						<li><a href="#">城市圈</a></li>
+					</ul>
+				</div>
+				<div id=right-a>
+					<p>当前访客身份：游客 [<a href="#">登录</a>|<a href="#">加入开源网站</a>]</p>
+				</div>
+			</div>
+
+		</div>
+<!-- 这里是logo和搜索条部分 -->
+		<div id="logo">
+			<div id=logo-fixed>
+				<div id="logo-true">
+					<img src="image/logo.png" width="290px" height="80px">
+				</div>
+				<div id="search">
+					<input class="input1" placeholder="资讯、软件、分享、代码、博客">
+					<input class="input2" type="button" value="搜 索">
+				</div>
+			</div>
+		</div>
+<!-- 这里是主体部分 -->
+		<div id="body">
+			<div id="body-fixed">
+				<div id="body-left">
+					<h1>加入开源中国</h1>
+					<a href="#">通过手机号码注册开源账号</a><hr>
+					<p>支持以下几种自动注册方法（无需手工激活帐号，请点击以下图标进入）：</p>
+                    <div id="img">
+					   <img src="image/logo1.png" width="620px">
+					</div>
+					<table>
+						<tr>
+							<th>电子邮箱：</th>
+							<td><input type="text" id="email"> 不建议使用 Gmail，原因你知道的</td>
+						</tr>
+						<tr>
+							<th></th>
+							<td>
+							  <div>
+								<ol>
+									<li>请填写真实邮箱，用于激活您的帐号；</li>
+									<li>包括 Gmail 在内很多邮件服务商会把 oschina 发送的邮件识别为垃圾邮件；</li>
+									<li>如果您使用163邮箱，那么邮件能在可您的订阅邮件列表中</li>
+									<li>如果您没有收到 oschina 发送的邮件，请注意查看您邮箱中的垃圾邮件；</li>
+									<li>请将来自 oschina 的邮件设置成不是垃圾邮件，以便接收本站邮件；</li>
+									<li>如果您忘记登录密码，也可以通过此邮箱进行密码重置；</li>
+								</ol>
+							  </div>
+							</td>
+						</tr>
+						<tr>
+							<th>个性网址：</th>
+							<td>http://my.oschina.net/<input type="text"> 设置后不能修改，请妥善填写</td>
+						</tr>
+						<tr>
+							<th>用户名：</th>	
+ 
+							<td><input type="text" id="uname">不能超过10个字</td>
+						</tr>
+						<tr>
+							<th>登录密码：</th>	
+ 
+							<td><input type="text" id="pword">至少6位,必须是字母或特殊符号和数字结合</td>
+						</tr>
+						
+						<tr>
+							<th>密码确认：</th>
+							<td><input type="text" id="tword"></td>
+						</tr>
+						<tr>
+							<th>性别：</th>
+							<td><input type="radio" name="n1">男<input type="radio" name="n1"> 女 请选择性别,注册后无法修改</td>
+						</tr>
+						<tr>
+							<th>居住地区：</th>
+							<td><select name="carlist">
+                                    <option >黑龙江</option>
+                                    <option value="saab">吉林</option>
+                                    <option value="opel">辽宁</option>
+                                    <option value="audi">北京</option>
+                                </select>请选择您所在的地区</td>
+						</tr>
+						<tr>
+							<th>验证码： </th>	
+
+							<td><input type="text">换另外一个图</td>
+						</tr>
+						<tr>
+							<th></th>
+							<td><img src="image/img.png"></td>
+						</tr>
+						<tr>
+							<th></th>
+							<td><input type="button" value="注册新用户" onclick="text()"></td>
+						</tr>
+						<tr>
+							<th></th>
+							<td>OSCHINA倡导真实的技术交流环境，请注册成功后上传真实头像，了解详情»
+</td>
+						</tr>
+					</table>
+					
+				</div>
+
+	<!-- 这是主体右侧 -->
+				<div id="body-right">
+					<p class="p1">已有账户？<a href="#">直接登录</a></p>
+					<p class="p2">为什么要登录？</p>
+					<ol>
+						<li>发布开源软件、新闻和博客</li>
+                        <li>参与开源软件/新闻的讨论和评论</li>
+                        <li>和别人分享软件使用心得</li>
+                        <li>随时得到软件最新更新消息</li>
+                        <li>认识更多开源爱好者</li>
+					</ol>
+					<p class="p2">为什么总提示验证码错误？</p>
+					<ol>
+						<li>首先请确定浏览器已经启用Cookie</li>
+						<li>实在不行，邮件给我们 market AT<br> oschina.net</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
